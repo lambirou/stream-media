@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Streaming server</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="libs/plyr/plyr.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <video id="player" playsinline controls>
+        <source src="http://localhost:4000/stream/video?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6InN0cmVhbS1tZWRpYSIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNjA0NzU4Mzg0NTA3fQ.Poch9bb2PPGMx7ET9A17PS2eEc0oqE8zB1VwZIvl2VY" type="video/mp4" />
+    </video>
+
+    <script src="libs/plyr/plyr.min.js"></script>
+    <script>
+        const player = new Plyr('#player');
+    </script>
+</body>
+</html>
